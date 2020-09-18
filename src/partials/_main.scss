@@ -1,0 +1,34 @@
+main {
+    @include container;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 350px;
+    gap: 25px 50px;
+
+    .cd {
+        padding: 20px;
+        text-align: center;
+        background-color: $header-bgc;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+
+        h3 {
+            color: white;
+            text-transform: uppercase;
+        }
+
+        h4,
+        h5 {
+            color: grey;
+        }
+    }
+}
