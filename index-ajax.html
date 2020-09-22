@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/app.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+    <title>DB dischi</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href=""><img src="https://cdn.iconscout.com/icon/free/png-256/spotify-11-432546.png"
+                    alt="Spotify-logo"></a>
+            <select id="filter">
+                <option value="">All</option>
+                <!-- insert options -->
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <!-- insert cd template -->
+    </main>
+
+    <script id="cd-template" type="text/x-handlebars-template">
+        <div class="cd">
+            <img src="{{poster}}" alt="{{title}}">
+            <h3>{{title}}</h3>
+            <h4 class="author">{{author}}</h4>
+            <h5 class="year">{{year}}</h5>
+        </div>
+    </script>
+
+    <script id="select-template" type="text/x-handlebars-template">
+        <option value="{{author}}">{{author}}</option>
+    </script>
+
+    <script src="dist/app.js"></script>
+</body>
+
+</html>

@@ -3,8 +3,9 @@ main {
     padding: 20px;
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, 300px);
     grid-auto-rows: 350px;
+    justify-content: center;
     gap: 25px 50px;
 
     .cd {
@@ -12,13 +13,11 @@ main {
         text-align: center;
         background-color: $header-bgc;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+        @include flex(column, space-around, center);
+        @include shadow;
 
         img {
-            width: 100%;
+            width: 85%;
         }
 
         h3 {

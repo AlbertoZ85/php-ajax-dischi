@@ -4,8 +4,7 @@ header {
     border-bottom: 1px solid darken($header-bgc, 10%);
 
     .container {
-        display: flex;
-        align-items: center;
+        @include flex($justify: space-between, $align: center);
 
         img {
             height: 50px;
